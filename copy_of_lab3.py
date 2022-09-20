@@ -80,22 +80,38 @@ plot((f1,(x,0,3)),(f2, (x,3,4)), (f3, (x,4,5)), (f4, (x,5,6)))
 #### 3a
 """
 
-#graph
+p_0, k, r, t = symbols('p_0 k r t')
 
-#limit
+p = (k*p_0)/(p_0 + (k - p_0)*exp(-r*t))
+p1 = p.subs({p_0:10, k:1000, r:0.1})
+
+plot(p1, (t, 0, 100))
+
+
+p1_lim = limit(p1,t,oo)
+print('The limit of p1 when k is 1000 as t goes to oo is', p1_lim)
 
 """#### 3b"""
 
-#graph
+p2 = p.subs({p_0:10, k:1, r:0.1})
 
-#limit
+plot(p2, (t, 0, 100), ylim=(-1,10))
+
+
+p2_lim = limit(p2,t,oo)
+print('The limit of p2 when k is 1 as t goes to oo is', p2_lim)
 
 """#### 3c"""
 
-#graph
+p3 = p.subs({p_0:10, k:15, r:0.1})
 
-#limit
+plot(p3, (t, 0, 100))
+
+p3_lim = limit(p3,t,oo)
+print('The limit of p3 when k is 15 as t goes to oo is', p3_lim)
 
 """#### 3d"""
+As t goes to infinity, the population size approaches its maximim or minimum of K. K is the carrying capacity of the population. The population can not exceed the K values.
 
-#observation on K
+
+
