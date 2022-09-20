@@ -8,7 +8,7 @@ Original file is located at
 
 ## MATH 151 Lab  3
 
-Put team members' names and section number here.
+Jaden Ninan, Zane Akers, Keegan Barrier, Robert Santos, Samuel Martinez Course #548
 """
 
 from sympy import *
