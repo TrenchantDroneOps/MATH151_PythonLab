@@ -16,8 +16,8 @@ from sympy.plotting import (plot,plot_parametric)
 
 """### Question 1"""
 
-print('the IVT says that for any value given in a continuous function, there lies a real point on the function')
-print('f has a root between 1 and 0 because f(0) is neg. and f(1) is pos.')
+print('The intermediate value theorem says for any function f that's continuous over the interval [a,b], it will take on any value between f(a) and f(b) on that point.')
+print('f has a root between 0 and 1 because f(0) is -1 and f(1) is 10 so there must an f for some point c such that f(c) = 0.')
 
 """#### 1a"""
 
